@@ -1,0 +1,20 @@
+{
+  "name": "vx sankey",
+  "version": "1.0.0",
+  "description": "ported from: \n\nhttps://github.com/tomshanley/d3-sankey-circular\n\nhttps://bl.ocks.org/tomshanley/b82d9aede85694b1422786ef41536ec5",
+  "keywords": [],
+  "homepage": "https://codesandbox.io/s/kz3576ol7",
+  "main": "index.js",
+  "dependencies": {
+    "react-dom": "latest",
+    "react": "latest",
+    "d3-shape": "latest",
+    "d3-scale": "1.0.7",
+    "d3-sankey-circular": "latest",
+    "d3-sankey": "0.7.1",
+    "@vx/text": "0.0.153",
+    "@vx/shape": "0.0.153",
+    "@vx/hierarchy": "0.0.153",
+    "@vx/group": "0.0.153"
+  }
+}

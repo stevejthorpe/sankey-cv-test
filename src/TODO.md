@@ -1,0 +1,13 @@
+-
+
+- Should we support both `d3-sankey` and `d3-sankey-horizontal`
+  - `d3-sankey` produces better results from my limited testing, but crashes on circular data
+  - Investigate `https://github.com/ricklupton/d3-sankey-diagram`?
+    - Seems to want to control UI rendering (or at least exposes API to do so, ex. `transitions`)
+  - paths
+    - `d3-sankey-circular` adds `path` to links which should be used (main for circular)
+    - `d3-sankey` needs an instance of `linkHorizontal` with `source` and `target` set
+      - https://github.com/d3/d3-sankey#sankeyLinkHorizontal
+      - Should we add `source` and `target` props to `HorizontalLink` to allow these to be passed?
+      - and/or add a `SankeyHorzontalLink`
+        - should it live under `@vx/shape` or `@vx/sankey` (or `@vx/horizontal`)
